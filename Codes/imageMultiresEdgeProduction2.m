@@ -1,0 +1,10 @@
+%% Multi Resolution Image 2;
+Im2s1=Im2;
+Im2s2=imresize(Im2,.5);
+Im2s4=imresize(Im2,.25);
+%% Edge of Image 2;
+Edge2=edge(Im2,'canny',.15,.8);%myCanny(Im2);
+%% Scale of Edged Image 2;
+Edg2s1=im2double(Edge2);
+Edg2s2=im2double(imresize(Edge2,.5));
+Edg2s4=im2double(imresize(Edge2,.25));
